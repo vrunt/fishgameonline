@@ -15,6 +15,7 @@ $(function() {
   var $messages = $('.messages'); // Messages area
   var $inputMessage = $('.inputMessage'); // Input message input box
   var $users = $('.users'); // user list
+  var $gamelog = $('.gamelog'); //game log
 
   var $loginPage = $('.login.page'); // The login page
   var $chatPage = $('.chat.page'); // The chatroom page
@@ -64,12 +65,21 @@ $(function() {
     // if there is a non-empty message and a socket connection
     if (message && connected) {
       $inputMessage.val('');
-      addChatMessage({
-        username: username,
-        message: message
-      });
-      // tell server to execute 'new message' and send along one parameter
-      socket.emit('new message', message);
+      if (message.charAt(0) == '/') {
+        addChatCommand({
+          username: username,
+          command: message
+        });
+        socket.emit('new command', message);
+      }
+      else {
+        addChatMessage({
+          username: username,
+          message: message
+        });
+        // tell server to execute 'new message' and send along one parameter
+        socket.emit('new message', message);
+      }
     }
   }
 
@@ -77,6 +87,12 @@ $(function() {
   function log (message, options) {
     var $el = $('<li>').addClass('log').text(message);
     addMessageElement($el, options);
+  }
+  
+  function addChatCommand(data) {
+    var $commandDiv = $('<li class="command">')
+      .text(data.command);
+    $gamelog.append($commandDiv);
   }
 
   // Adds the visual chat message to the message list
@@ -147,6 +163,28 @@ $(function() {
       $messages.append($el);
     }
     $messages[0].scrollTop = $messages[0].scrollHeight;
+  }
+  
+  function addUserToList (data) {
+    var $usernameLi = $('<li class="username" id="' + data.uid + '"/>')
+      .text(data.username)
+      .css('color', getUsernameColor(data.username));
+    $users.append($usernameLi);
+  }
+  
+  function populateUsersList(data) {
+    for (var key in data.userList) {
+      addUserToList(
+        { 
+          uid: data.userList[key].slice(0, data.userList[key].indexOf('|')),
+          username: data.userList[key].slice(data.userList[key].indexOf('|')+1)
+        });
+    }
+  }
+  
+  function removeUserFromList(data) {
+    var $leaver = $('#' + data.uid );
+    $leaver.remove();
   }
 
   // Prevents input from having injected markup
@@ -239,6 +277,7 @@ $(function() {
       prepend: true
     });
     addParticipantsMessage(data);
+    populateUsersList(data);
   });
 
   // Whenever the server emits 'new message', update the chat body
@@ -246,11 +285,15 @@ $(function() {
     addChatMessage(data);
   });
 
+  socket.on('new command', function (data) {
+    addChatCommand(data);
+  });
+    
   // Whenever the server emits 'user joined', log it in the chat body
   socket.on('user joined', function (data) {
     log(data.username + ' joined');
     addParticipantsMessage(data);
-    //add name to list
+    addUserToList(data);
   });
 
   // Whenever the server emits 'user left', log it in the chat body
@@ -258,7 +301,7 @@ $(function() {
     log(data.username + ' left');
     addParticipantsMessage(data);
     removeChatTyping(data);
-    //remove name from list
+    removeUserFromList(data);
   });
 
   // Whenever the server emits 'typing', show the typing message
