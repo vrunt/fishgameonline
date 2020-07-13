@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+     <symbol id="cardback" width="250" height="350" viewBox="0 0 250 350">
+  <title>cardback</title>
+  <ellipse fill="#ad0000" stroke-width="null" cx="240" cy="340" id="svg_3" rx="10" ry="10" stroke="null"/>
+  <ellipse fill="#ad0000" stroke-width="null" cx="10" cy="10" id="svg_4" rx="10" ry="10" stroke="null"/>
+  <ellipse fill="#ad0000" stroke-width="null" cx="10" cy="340" id="svg_5" rx="10" ry="10" stroke="null"/>
+  <ellipse fill="#ad0000" stroke-width="null" cx="240" cy="10" id="svg_6" rx="10" ry="10" stroke="null"/>
+  <rect fill="#ad0000" stroke="null" stroke-width="null" stroke-opacity="null" x="10" y="0" width="230" height="350" id="svg_7"/>
+  <rect fill="#ad0000" stroke="null" stroke-width="null" stroke-opacity="null" x="0" y="10" width="250" height="330" id="svg_8"/>
+  <ellipse fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" cx="239" cy="339" id="svg_9" rx="10" ry="10"/>
+  <ellipse fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" cx="11" cy="11" id="svg_10" rx="10" ry="10"/>
+  <ellipse fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" cx="11" cy="339" id="svg_11" rx="10" ry="10"/>
+  <ellipse fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" cx="239" cy="11" id="svg_12" rx="10" ry="10"/>
+  <rect fill="#fcfc0c" stroke-width="null" stroke-opacity="null" x="11" y="1" width="229" height="348" id="svg_13" stroke="null"/>
+  <rect fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" x="1" y="11" width="248" height="329" id="svg_14"/>
+  <ellipse fill="#ad0000" stroke="null" stroke-width="null" cx="238" cy="338" id="svg_15" rx="10" ry="10"/>
+  <ellipse fill="#ad0000" stroke="null" stroke-width="null" cx="12" cy="12" id="svg_16" rx="10" ry="10"/>
+  <ellipse fill="#ad0000" stroke="null" stroke-width="null" cx="12" cy="338" id="svg_17" rx="10" ry="10"/>
+  <ellipse fill="#ad0000" stroke="null" stroke-width="null" cx="238" cy="12" id="svg_18" rx="10" ry="10"/>
+  <rect fill="#ad0000" stroke-width="null" x="12" y="2" width="228" height="346" id="svg_19" stroke="null"/>
+  <rect fill="#ad0000" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" x="2" y="12" width="246" height="329" id="svg_20"/>
+  <ellipse fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" cx="225" cy="25" id="svg_26" rx="10" ry="10"/>
+  <ellipse fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" cx="25" cy="25" id="svg_27" rx="10" ry="10"/>
+  <ellipse fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" cx="25" cy="325" id="svg_28" rx="10" ry="10"/>
+  <ellipse fill="#fcfc0c" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" cx="225" cy="325" id="svg_29" rx="10" ry="10"/>
+  <rect fill="#fcfc0c" stroke-width="null" stroke-opacity="null" fill-opacity="null" x="25" y="15" width="200" height="320" id="svg_30" stroke="null"/>
+  <rect fill="#fcfc0c" stroke-width="null" stroke-opacity="null" fill-opacity="null" x="15" y="25" width="220" height="300" id="svg_31" stroke="null"/>
+  <line fill="none" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" x1="250" y1="1" x2="3" y2="350" id="svg_33" stroke-linejoin="null" stroke-linecap="null"/>
+  <ellipse fill="#ad0000" stroke="#ad0000" stroke-width="2" cx="223" cy="27" id="svg_40" rx="10" ry="10"/>
+  <ellipse fill="#ad0000" stroke="#ad0000" stroke-width="2" cx="27" cy="27" id="svg_41" rx="10" ry="10"/>
+  <ellipse fill="#ad0000" stroke="#ad0000" stroke-width="2" cx="27" cy="323" id="svg_42" rx="10" ry="10"/>
+  <ellipse fill="#ad0000" stroke="#ad0000" stroke-width="2" cx="223" cy="323" id="svg_43" rx="10" ry="10"/>
+  <rect fill="#ad0000" stroke-width="2" stroke-opacity="null" fill-opacity="null" x="17" y="27" width="216" height="295" id="svg_44" stroke="#ad0000"/>
+  <rect fill="#ad0000" stroke="#ad0000" stroke-width="2" stroke-opacity="null" fill-opacity="null" x="27" y="17" width="195" height="316" id="svg_45"/>
+  <text fill="#fcfc0c" stroke-width="0" x="88.276999" y="72.788681" id="svg_48" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" stroke="#000000" transform="matrix(18.3446 0 0 16.9359 -1601.31 -963.349)" opacity="0.06">N</text>
+ </symbol>
+     <symbol id="cardfront" width="250" height="350" viewBox="0 0 250 350">
+  <title>cardfront</title>
+  <ellipse stroke="null" ry="10" rx="10" id="svg_3" cy="340" cx="240" stroke-width="null" fill="#ad0000"/>
+  <ellipse stroke="null" ry="10" rx="10" id="svg_4" cy="10" cx="10" stroke-width="null" fill="#ad0000"/>
+  <ellipse stroke="null" ry="10" rx="10" id="svg_5" cy="340" cx="10" stroke-width="null" fill="#ad0000"/>
+  <ellipse stroke="null" ry="10" rx="10" id="svg_6" cy="10" cx="240" stroke-width="null" fill="#ad0000"/>
+  <rect id="svg_7" height="350" width="230" y="0" x="10" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ad0000"/>
+  <rect id="svg_8" height="330" width="250" y="10" x="0" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ad0000"/>
+  <ellipse ry="10" rx="10" id="svg_9" cy="339" cx="239" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fcfc0c"/>
+  <ellipse ry="10" rx="10" id="svg_10" cy="11" cx="11" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fcfc0c"/>
+  <ellipse ry="10" rx="10" id="svg_11" cy="339" cx="11" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fcfc0c"/>
+  <ellipse ry="10" rx="10" id="svg_12" cy="11" cx="239" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fcfc0c"/>
+  <rect stroke="null" id="svg_13" height="348" width="229" y="1" x="11" stroke-opacity="null" stroke-width="null" fill="#fcfc0c"/>
+  <rect id="svg_14" height="329" width="248" y="11" x="1" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fcfc0c"/>
+  <ellipse ry="10" rx="10" id="svg_15" cy="338" cx="238" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <ellipse ry="10" rx="10" id="svg_16" cy="12" cx="12" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <ellipse ry="10" rx="10" id="svg_17" cy="338" cx="12" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <ellipse ry="10" rx="10" id="svg_18" cy="12" cx="238" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <rect stroke="null" id="svg_19" height="346" width="228" y="2" x="12" stroke-width="null" fill="#ffffff"/>
+  <rect id="svg_20" height="329" width="246" y="12" x="2" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_33" y2="350" x2="3" y1="1" x1="250" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+ </g>
+  </defs>
+</svg>

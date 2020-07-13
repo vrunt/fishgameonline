@@ -9,18 +9,14 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-html, input {
-  font-family:
-    "HelveticaNeue-Light",
-    "Helvetica Neue Light",
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    "Lucida Grande",
-    sans-serif;
+html,
+input {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -29,6 +25,50 @@ html, body {
 ul {
   list-style: none;
   word-wrap: break-word;
+}
+
+.deckArea:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.deckArea .deck {
+  display: block;
+  margins: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+:nth-child(1) { --nth-child: 0 }
+:nth-child(2) { --nth-child: 1 }
+:nth-child(3) { --nth-child: 2 }
+:nth-child(4) { --nth-child: 3 }
+:nth-child(5) { --nth-child: 4 }
+:nth-child(6) { --nth-child: 5 }
+:nth-child(7) { --nth-child: 6 }
+:nth-child(8) { --nth-child: 7 }
+:nth-child(9) { --nth-child: 8 }
+:nth-child(10) { --nth-child: 9 }
+
+.deck svg {
+  background-color: transparent;
+  position:absolute;
+  top: calc(var(--nth-child) * 2px);
+  left: calc(var(--nth-child) * 2px);
+  z-index: calc(52 - var(--nth-child));
+  transition: all .3s ease-in-out;
+  cursor: grab;
+}
+
+.deck svg:hover {
+  //transform: rotate3d(0,0,1,2deg);
+  transform: rotateZ(1.5deg);
+}
+
+.handArea {
+  display: inline-block;
+  position: relative;
 }
 
 /* Pages */
@@ -89,7 +129,8 @@ ul {
   letter-spacing: 3px;
 }
 
-.login.page .title, .login.page .usernameInput {
+.login.page .title,
+.login.page .usernameInput {
   color: #fff;
   font-weight: 100;
 }
@@ -154,4 +195,8 @@ ul {
   position: absolute;
   right: 0;
   width: 100%;
+}
+
+.gamelog {
+  position: relative;
 }
